@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="img/src/favicon.png" />
+		<title>爱心鱼休闲游戏</title>
+		<style type="text/css">
+			.wrap {
+				width: 800px;
+				height: 600px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#canvas1 {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				z-index: 1;
+			}
+			
+			#canvas2 {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				z-index: 0;
+			}
+			
+			#cover {
+				position: absolute;
+				z-index: 2;
+				width: 800px;
+				height: 600px;
+				background-image: url(img/src/cover.png);
+			}
+			
+			#play {
+				position: absolute;
+				z-index: 3;
+				width: 80px;
+				height: 80px;
+				left: 360px;
+				bottom: 110px;
+				background-image: url(img/src/play.png);
+			}
+			
+			#play:hover {
+				cursor: pointer;
+				opacity: 0.7;
+			}
+			
+			.agianWrap {
+				position: absolute;
+				z-index: 4;
+				color: white;
+				font-family: verdana;
+				font-size: 20px;
+				top: 300px;
+				width: 800px;
+				text-align: center;
+			}
+			
+			#again{
+				display: none;
+				cursor: pointer;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<canvas id="canvas1" width="800" height="600"></canvas>
+			<canvas id="canvas2" width="800" height="600"></canvas>
+			<div id="cover"></div>
+			<div id="play"></div>
+			<p class="agianWrap"><a id="again">再来一次</a></p>
+		</div>
+		<script src="js/commonFunctions.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/halo.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
