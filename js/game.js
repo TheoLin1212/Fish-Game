@@ -191,7 +191,7 @@ var fruitObj = function() {
 	this.fruitType = [];
 	this.orange = new Image();
 	this.blue = new Image();
-	this.num;
+//	this.num;
 }
 fruitObj.prototype.num = 30;
 fruitObj.prototype.init = function() {
